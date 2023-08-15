@@ -8,7 +8,7 @@ const Header = () => {
     return (
         <div className="flex justify-between mx-2 sm:mx-auto max-w-6xl items-center py-6">
            <div className="flex">
-                <MenuItem title="HOME" Icon={AiFillHome} path="/home" />
+                <MenuItem title="HOME" Icon={AiFillHome} path="/" />
                 <MenuItem title="ABOUT" Icon={BsInfoCircleFill} path="/about" />
             </div>
            <div className="flex items-center space-x-5">
