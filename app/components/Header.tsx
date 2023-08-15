@@ -2,6 +2,7 @@ import Link from "next/link"
 import MenuItem from "./MenuItem"
 import { AiFillHome } from 'react-icons/ai'
 import { BsInfoCircleFill } from 'react-icons/bs'
+import DarkModeSwitch from "./DarkModeSwitch"
 
 const Header = () => {
     return (
@@ -10,7 +11,8 @@ const Header = () => {
                 <MenuItem title="HOME" Icon={AiFillHome} path="/home" />
                 <MenuItem title="ABOUT" Icon={BsInfoCircleFill} path="/about" />
             </div>
-           <div className="">
+           <div className="flex items-center space-x-5">
+                <DarkModeSwitch />
                 <Link href="/">
                     <h2 className="text-2xl">
                         <span className="font-bold bg-amber-500 py-1 px-2 rounded-lg mr-1">IMDb</span>
